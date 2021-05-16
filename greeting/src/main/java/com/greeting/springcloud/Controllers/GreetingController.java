@@ -12,7 +12,7 @@ public class GreetingController {
     @Autowired
     private GreetingProperties greetingProperties;
 
-    @GetMapping("/{languageCode}")
+    @GetMapping("/language/{languageCode}")
     public String home(@PathVariable String languageCode) {
         return greetingProperties.getGreetings().getOrDefault(languageCode.toUpperCase(),
                 greetingProperties.getGreeting());

@@ -12,16 +12,16 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 @RestController
 public class WebController {
-    @Autowired
-    private NameService nameService;
-    @Autowired
-    private GreetingService greetingService;
+  @Autowired
+  private NameService nameService;
+  @Autowired
+  private GreetingService greetingService;
 
-    @GetMapping("/locale")
-    public String index(HttpServletRequest request) {
-		String locale = RequestContextUtils.getLocaleResolver(request).resolveLocale(request).toLanguageTag();
-		String greeting =  new StringBuilder().append(greetingService.getGreeting(locale)).
-				append(" ").append(nameService.getName()).toString();
-		return greeting;
-	}
+  @GetMapping("/locale")
+  public String index(HttpServletRequest request) {
+    String locale = RequestContextUtils.getLocaleResolver(request).resolveLocale(request).toLanguageTag();
+    String greeting = new StringBuilder().append(greetingService.getGreeting(locale)).append(" ")
+        .append(nameService.getName()).toString();
+    return greeting;
+  }
 }

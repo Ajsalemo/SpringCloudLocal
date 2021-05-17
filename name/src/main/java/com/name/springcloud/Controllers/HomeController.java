@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-    String message = "Welcome to Spring Boot - Name service";
+    String message = "Hello from Spring Boot - Name service";
 
     @GetMapping("/")
     public String home() {

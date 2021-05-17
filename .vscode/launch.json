@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringcloudApplication<springcloud (2)>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.name.springcloud.SpringcloudApplication",
+            "projectName": "springcloud (2)",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringcloudApplication<springcloud>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.greeting.springcloud.SpringcloudApplication",
+            "projectName": "springcloud",
+            "args": ""
+        }
+    ]
+}

@@ -22,7 +22,7 @@ public class SpringcloudApplication {
 	// Zipkin/Brave sampling
 	// @Bean
 	// public Sampler getSampler() {
-	// 	return new Sampler();
+	// 	return new AlwaysSampler();
 	// }
 
 }

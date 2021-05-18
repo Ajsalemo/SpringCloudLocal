@@ -1,2 +1,4 @@
-server.port: 7070
-name: Stranger!
+spring:
+  application:
+    name: name
+

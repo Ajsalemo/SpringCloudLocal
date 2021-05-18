@@ -1,0 +1,10 @@
+server:
+  port: 9090
+greeting: Hello
+
+# https://stackoverflow.com/questions/46131196/com-netflix-discovery-shared-transport-transportexception-cannot-execute-reques
+# Disable Eureka client self discovery
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

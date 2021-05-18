@@ -10,5 +10,4 @@ spring:
           # Checkout the 'main' branch
           default-label: main
           # Look for .yml files under the specified paths
-          search-paths:
-          - config
+          search-paths: config

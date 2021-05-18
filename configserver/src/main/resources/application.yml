@@ -1,6 +1,5 @@
 server:
     port: 8888
-
 spring:
   cloud:
     config:
@@ -8,3 +7,5 @@ spring:
         git:
           uri: https://github.com/Ajsalemo/SpringCloudLocal
           skipSslValidation: true
+          # Checkout the 'main' branch
+          default-label: main

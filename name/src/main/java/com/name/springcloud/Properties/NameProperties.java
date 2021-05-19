@@ -1,7 +1,5 @@
 package com.name.springcloud.Properties;
 
-import java.util.Optional;
-
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties

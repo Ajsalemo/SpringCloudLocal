@@ -3,6 +3,8 @@ package com.web.springcloud.Controllers;
 import com.web.springcloud.Services.GreetingService;
 import com.web.springcloud.Services.NameService;
 
+import java.util.logging.Logger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +16,7 @@ public class WebController {
   private NameService nameService;
   @Autowired
   private GreetingService greetingService;
+  private static final Logger LOG = Logger.getLogger(WebController.class.getName());
 
   @GetMapping(value = { "/hello", "/hello/{name}" })
   public String index(@PathVariable(required = false) String name) {
@@ -23,6 +26,9 @@ public class WebController {
     if (name == null) {
       name = "";
     }
+
+    LOG.info("Web Service: WebController");
+
     String greeting = new StringBuilder().append(greetingService.getGreeting()).append(" ")
         .append(nameService.getName(name)).toString();
     return greeting;

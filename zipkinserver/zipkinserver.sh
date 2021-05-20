@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run zipkin through Docker
-docker run -d -p 9411:9411 openzipkin/zipkin
+# docker run -d -p 9411:9411 openzipkin/zipkin
 
 # Or by Java 
 curl -sSL https://zipkin.io/quickstart.sh | bash -s

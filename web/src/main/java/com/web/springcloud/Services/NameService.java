@@ -10,7 +10,7 @@ public class NameService {
     private RestTemplate rest;
 
     public String urlBuilder(String name) {
-        return "http://localhost:7070/name/" + name;
+        return "http://name:7070/name/" + name;
     }
 
     public String getName(String name) {

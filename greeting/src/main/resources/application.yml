@@ -1,4 +1,8 @@
-spring:
-  application:
-    name: greeting
+# ------------------------------------------------------------------------- #
+# spring.application.name can be enabled when running locally. If deploying to Azure Spring Cloud, leave this commented out as Azure Spring Cloud gives the app instance a dynamic name #
+# ------------------------------------------------------------------------- #
+
+# spring:
+#   application:
+#     name: greeting
 

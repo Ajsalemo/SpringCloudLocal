@@ -1,4 +1,7 @@
-spring:
-  application:
-    name: web
+# ------------------------------------------------------------------------- #
+# spring.application.name can be enabled when running locally. If deploying to Azure Spring Cloud, leave this commented out #
+# ------------------------------------------------------------------------- #
+# spring:
+#   application:
+#     name: web
 

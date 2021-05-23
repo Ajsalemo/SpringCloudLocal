@@ -3,3 +3,4 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+

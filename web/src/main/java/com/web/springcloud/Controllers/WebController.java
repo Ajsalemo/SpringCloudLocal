@@ -1,9 +1,9 @@
 package com.web.springcloud.Controllers;
 
+import java.util.logging.Logger;
+
 import com.web.springcloud.Services.GreetingService;
 import com.web.springcloud.Services.NameService;
-
-import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,20 +1,23 @@
 package com.web.springcloud.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Service
 public class GreetingService {
-    // "greeting" is the name of the service that is being called
-    // This equates to localhost:9090 (at the moment) - Ribbon intercepts this and checks the service name against its currently running URL
-    // This is help made possible by service discovery
-    private static final String URL = "http://greeting/greeting";
-
     @Autowired
-    private RestTemplate rest;
+    private GreetingFeignClient greetingFeignClient;
 
     public String getGreeting() {
-        return rest.getForObject(URL, String.class);
+        return greetingFeignClient.getGreeting();
+    }
+
+    @FeignClient("greeting")
+    static interface GreetingFeignClient {
+        @RequestMapping("/greeting")
+        public String getGreeting();
     }
 }

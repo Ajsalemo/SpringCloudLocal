@@ -13,4 +13,5 @@ A basic Spring Cloud project utilizing service discovery, tracing, load balancin
   
  <br>
   
-  Deployment: This is configured to be able to be deployed to Azure Spring Cloud. For the `web`, `name` and `greeting` services - the Maven package `spring-cloud-starter-azure-spring-cloud-client` has already been added for Service Discovery specific to Azure. If running locally, uncomment any needed configuration in the service associated `.yml` files.
+### Deployment: 
+  This is configured to be able to be deployed to Azure Spring Cloud. For the `web`, `name` and `greeting` services - the Maven package `spring-cloud-starter-azure-spring-cloud-client` has already been added for Service Discovery specific to Azure. If running locally, uncomment any needed configuration in the service associated `.yml` files.

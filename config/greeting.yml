@@ -2,8 +2,8 @@
 # server.port can be enabled when running locally. If deploying to Azure Spring Cloud, leave this commented out as Azure Spring Cloud gives the app instance a dynamic port #
 # ------------------------------------------------------------------------- #
 
-server:
-  port: 9090
+# server:
+#   port: 9090
 
 # ------------------------------------------------------------------------- #
 # ------------------------------------------------------------------------- #
